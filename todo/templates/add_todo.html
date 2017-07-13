@@ -1,0 +1,12 @@
+{%block title %}i play To Do List{% endblock %}
+{%block content%}
+<div class="mid">
+<h1>Add Todo List</h1>
+<form action="add-todo" method="post">
+<label>Description: </label>
+<textarea name="job" required></textarea>
+<input type="submit" value="Add">
+{%csrf_token%}
+</form>
+</div>
+{% endblock %}

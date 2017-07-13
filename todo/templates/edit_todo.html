@@ -1,0 +1,13 @@
+{%block title %}i play To Do List{% endblock %}
+{%block content%}
+<div class="mid">
+<h1>Edit Todo List</h1>
+<form action="" method="post">
+<label>Description: </label>
+<textarea name="job" required>{{todo.description}}</textarea>
+<input type="hidden" name="id" value="{{todo.id}}">
+<input type="submit" value="Update">
+{%csrf_token%}
+</form>
+</div>
+{% endblock %}
